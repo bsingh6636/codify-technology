@@ -1,4 +1,4 @@
-# Fieldwork Engineering
+# Codify Technologies
 
 A minimal engineering company landing page inspired by Arc Logi's service-led structure. Built independently with Next.js App Router, TypeScript, and Tailwind CSS 4. All application files are contained in this project.
 
@@ -27,7 +27,11 @@ The production-ready static site is exported to `out/`. Serve that directory usi
 - `src/app/layout.tsx`: title, description, and social metadata.
 - `src/components/`: reusable navigation, section headings, icons, illustrations, and project brief dialog.
 
-Fieldwork is a working brand, not a claim about an existing company. The expertise panels are illustrative, not client case studies. No customer names, endorsements, or performance statistics are fabricated.
+The company brand is Codify Technologies and the intended production domain is `codifyteam.com`. The expertise panels are illustrative, not client case studies. No customer endorsements or performance statistics are fabricated.
+
+The Municipal portals section links to the five existing public frontend hosts defined in `../infra/config/stack.yaml`: Dharche, Siranchowk, Ratnagar, Madhyabindu, and Devghat. It does not expose API hosts. Edit `src/components/municipal-portals.tsx` to update the directory.
+
+Canonical metadata, sitemap, and robots.txt target `https://codifyteam.com/`. The Sites deployment is a private review preview, separate from domain hosting. On inspection, the existing infrastructure defines the municipal subdomains but no apex ingress for this landing page, and the apex does not resolve from this environment. Root-domain production deployment requires an apex DNS record and a dedicated static frontend ingress. Preserve existing municipal routes, API routes, and certificates when adding it.
 
 The accessible project dialog downloads a plain text brief locally. It does not send inquiries or store personal information. Connect a real contact endpoint and update its explanation before using it for lead collection.
 

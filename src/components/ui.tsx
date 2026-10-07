@@ -5,7 +5,7 @@ export function Arrow({ diagonal = false, className = "" }: { diagonal?: boolean
 }
 
 export function Logo({ light = false }: { light?: boolean }) {
-  return <a className={`brand ${light ? "brand-light" : ""}`} href="#top" aria-label="Fieldwork home"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" aria-hidden="true"><path d="M4 25V4h21M4 14h16M14 25V4" stroke="currentColor" strokeWidth="3.5" /></svg><span>fieldwork<span className="brand-period">.</span></span></a>;
+  return <a className={`brand ${light ? "brand-light" : ""}`} href="#top" aria-label="Codify Technologies home"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" aria-hidden="true"><path d="m10 6-7 8.5 7 8.5m9-17 7 8.5-7 8.5m-3-19-3 21" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round" /></svg><span className="brand-wordmark">codify<span className="brand-descriptor">TECHNOLOGIES</span></span></a>;
 }
 
 export function SectionHeading({ number, label, title, children }: { number: string; label: string; title: string; children?: ReactNode }) {

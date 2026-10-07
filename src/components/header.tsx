@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Arrow, Logo } from "./ui";
 
-const links = [{ href: "#services", text: "What we do" }, { href: "#approach", text: "Our approach" }, { href: "#expertise", text: "Expertise" }];
+const links = [{ href: "#services", text: "What we do" }, { href: "#approach", text: "Our approach" }, { href: "#portals", text: "Portals" }];
 
 export function Header() {
   const [open, setOpen] = useState(false);
